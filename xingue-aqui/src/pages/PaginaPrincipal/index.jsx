@@ -26,7 +26,6 @@ function PaginaPrincipal() {
                     <input type='text' className='inputPrincipal' value={swearWord} onChange={(e) => setSwearWord(e.target.value)} />
                     <button type='submit' className='inputBotao' onClick={enviarXingamento}>Enviar💥</button>
                 </div>
-
             </section>
         </main>
     );
