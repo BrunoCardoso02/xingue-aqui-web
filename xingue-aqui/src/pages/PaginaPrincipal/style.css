@@ -5,6 +5,8 @@
     height: 100vh;
     background: rgb(180,144,58);
     background: linear-gradient(90deg, rgba(180,144,58,1) 0%, rgba(212,39,39,1) 50%, rgba(252,176,69,1) 100%);
+    display: flex;
+    flex-direction: column;
 }
 section {
     position: relative;
@@ -53,3 +55,4 @@ h1 {
 .inputBotao:hover{
     cursor: pointer;
 }
+
