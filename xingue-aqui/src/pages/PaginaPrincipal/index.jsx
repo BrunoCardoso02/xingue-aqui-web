@@ -5,14 +5,17 @@ import axios from 'axios';
 function PaginaPrincipal() {
     const [swearWord, setSwearWord] = useState('');
 
+    const api = axios.create({
+        baseURL: process.env.REACT_APP_API_URL
+    })
+
     const swearWordItens = {
         swear_word: swearWord,
         categorie: "VIOLENCIA"
     }
 
     const enviarXingamento = () => {
-        const url = 'http://localhost:8080/swearword/create'
-        axios.post(url, swearWordItens)
+        api.post('/swearword/create', swearWordItens)
             .then((res) => alert("Xingamento enviado", res.data))
             .catch((err) => alert(err))        
         setSwearWord('')

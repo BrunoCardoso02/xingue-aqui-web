@@ -11,7 +11,7 @@
 .anuncio-container {
     display: flex;
     flex-direction: row;
-    gap: 5vw;
+    gap: 4vw;
 }
 .anuncio {
     color: #fff;
