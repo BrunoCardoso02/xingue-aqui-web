@@ -56,3 +56,12 @@ h1 {
     cursor: pointer;
 }
 
+.menu-opcoes {
+    height: 5vh;
+    width: 50%;
+    outline: none;
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+   /* margin: auto;*/
+}
